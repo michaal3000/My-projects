@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(
+    circle at top left,
+    #ba181b,
+    #660708,
+    #0b090a
+  );
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+.task {
+  font-family: "Dancing Script", cursive;
+}
+.cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  width: 80%;
+  border: white 5px solid;
+  font-size: 40px;
+  margin: 3%;
+}
+
+.task,
+.start {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 5px whitesmoke dashed;
+  align-items: center;
+}
+
+.text,
+.start {
+  border-bottom: none;
+  margin-left: 15px;
+}
+
+.start {
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.close {
+  color: red;
+  font-weight: 800;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 50%;
+  margin: 10px;
+}
+
+#add {
+  font-size: 30px;
+  margin-left: 10px;
+  background-color: white;
+  height: 50px;
+  border-radius: 5px;
+}
+
+#add:active {
+  background-color: black;
+  color: white;
+}
+
+.done {
+  color: grey;
+  filter: blur(1px);
+  text-decoration: line-through;
+}
