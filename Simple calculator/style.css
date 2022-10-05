@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1635070041409-e63e783ce3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1979&q=80");
+  background-size: cover;
+}
+
+.calculator {
+  background-color: #dee2e6;
+  max-width: 440px;
+  margin: auto;
+  border: #495057 10px solid;
+  border-radius: 15px;
+}
+
+#display {
+  background: white;
+  border: none;
+  width: 100%;
+  box-shadow: none;
+  border-bottom: 4px solid black;
+  height: 100px;
+  padding: 20px;
+  text-align: right;
+  font-size: 50px;
+}
+
+.buttons {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.func,
+.number {
+  border-radius: 20%;
+
+  padding: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.number {
+  background-color: #ced4da;
+  box-shadow: 0 5px 0 #adb5bd;
+}
+
+.number:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.func {
+  background-color: #adb5bd;
+  box-shadow: 0 5px 0 #6c757d;
+}
+
+.func:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.big {
+  grid-row: 4/-1;
+  grid-column: 4;
+  border-radius: 5px;
+}
+
+.wide {
+  grid-column: span 2;
+  border-radius: 5px;
+}
